@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <title>{% block title %}Home{% endblock %}</title>
+</head>
+<body>
+    <nav classs="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggle" type="button" data-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <div>
+                <a class="nav-item nav-link" id="login" href="/login">login</a>
+                <a class="nav-item nav-link" id="sign-up" href="/sign-up">sign-up</a>
+                <a class="nav-item nav-link" id="logout" href="/logout">logout</a>
+                <a class="nav-item nav-link" id="home" href="/home">home</a>
+           </div>
+        </div>
+    </nav>
+    <div class="container">{% block content %}<h1>base</h1>{% endblock %}</div>
+    <script type="text/javascript"
+            src="{{url_for('static', filename='index.js')}}"
+    ></script></script>
+</body>
+</html>
