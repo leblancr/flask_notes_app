@@ -9,3 +9,8 @@ def home():
     return render_template('home.html')
 
 
+@views.route('/home')
+def home2():
+    return render_template('home.html')
+
+

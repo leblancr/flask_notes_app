@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block title %}Sign up{% endblock %}
 {% block content %}
-<form metho="POST">
+<form method="POST">
     <h2 align="center">Sign up</h2>
     <div class="form-group">
         <label for="email">email address</label>
@@ -14,19 +14,19 @@
         />
     </div>
     <div class="form-group">
-        <label for="firstName">first name</label>
+        <label for="first_name">first name</label>
         <input
-            type="email"
+            type="text"
             class="form-control"
-            id="firstName"
-            name="firstName"
+            id="first_name"
+            name="first_name"
             placeholder="Enter first name"
         />
     </div>
     <div class="form-group">
         <label for="password1">password</label>
         <input
-            type="email"
+            type="text"
             class="form-control"
             id="password1"
             name="password1"
@@ -36,7 +36,7 @@
     <div class="form-group">
         <label for="password2">password</label>
         <input
-            type="email"
+            type="text"
             class="form-control"
             id="password2"
             name="password2"
